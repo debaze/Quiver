@@ -1,0 +1,18 @@
+.map {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6400px;
+	height: 6400px;
+	margin: auto;
+	position: absolute;
+	overflow: hidden;
+	background-color: #262626
+}
+
+.part {
+	position: absolute;
+	background-image: url(textures/error.jpg);
+	background-repeat: repeat;
+	image-rendering: crisp-edges
+}

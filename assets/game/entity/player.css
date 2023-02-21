@@ -1,0 +1,14 @@
+#player {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	background-image: url(paladin.png);
+	background-size: cover;
+	image-rendering: crisp-edges;
+	transform: rotateY(0);
+	z-index: 1
+}
