@@ -1,0 +1,14 @@
+@font-face {
+	font-family: PixelBit;
+	src: url(../pixel_bit.ttf)
+}
+
+.title,
+.menu #btn-new_game,
+.menu #btn-launch_backup,
+.menu #btn-confirm_backup,
+.menu #btn-open_credits,
+.credits,
+.credits #btn-close_credits {
+	font-family: PixelBit
+}

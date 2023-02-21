@@ -1,0 +1,52 @@
+.menu {
+	width: 512px;
+	margin: 0 auto;
+	padding-top: 32px;
+	right: 0;
+	left: 0;
+	position: absolute
+}
+
+.btn {
+	width: 512px;
+	height: 48px;
+	margin-bottom: 16px;
+	padding: 0;
+	border: none;
+	background-color: #555;
+	color: #000;
+	cursor: pointer;
+	font-size: 20px
+}
+
+.btn:hover {color: #fff}
+
+.btn:active {transform: scale(0.95)}
+
+.menu #launch_backup,
+.menu #backup_content,
+.menu #btn-confirm_backup {display: none}
+
+.menu #btn-launch_backup {
+	display: block;
+	line-height: 48px;
+	text-align: center
+}
+
+.menu #backup_content {
+	width: 480px;
+	height: 96px;
+	padding: 16px;
+	border: none;
+	background-color: #000;
+	color: #fff;
+	cursor: text;
+	font-size: 16px;
+	resize: none;
+	word-break: break-all
+}
+
+.menu #btn-confirm_backup {
+	background-color: #000;
+	color: #fff
+}

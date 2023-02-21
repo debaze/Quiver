@@ -1,0 +1,31 @@
+.credits {
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	background-color: #312113;
+	color: #fff;
+	text-align: center;
+	z-index: 99
+}
+
+.credits #btn-close_credits {
+	width: 512px;
+	height: 48px;
+	margin: 0 auto;
+	padding: 0;
+	right: 0;
+	bottom: 32px;
+	left: 0;
+	position: absolute;
+	border: none;
+	background-color: #555;
+	cursor: pointer
+}
+
+.credits #btn-close_credits:hover {color: #fff}
