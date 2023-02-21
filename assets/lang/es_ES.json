@@ -1,0 +1,159 @@
+{
+	"es_ES": {
+		"lang": "es",
+		"play.text": "Jugar",
+		"close.text": "Cerrar",
+		"cancel.text": "Anular",
+		"apply.text": "Aplicar",
+		"create.text": "Creer",
+		"new_game.text": "Nuevo juego",
+		"launch_backup.text": "Lanzar una copia de respaldo",
+		"keybind_tip.text": "Presione una tecla",
+		"save.text": "Guardar",
+		"save_tip.text": "Para guardar tu juego, copia el código a continuación y péguelo en un archivo JSON.",
+		"copy.text": "Copiar",
+		"copy_success.text": "¡Copiado con éxito!!",
+		"new_game": {
+			"player_name_tip.text": "¿Cómo te llamas?\nEste nombre será usado para identificarte en este nuevo juego.",
+			"player_name_placeholder.text": "Es la historia de...",
+			"game_name_tip.text": "Dale un nombre a tu nuevo juego.",
+			"game_name_placeholder.text": "Mi nuevo juego...",
+			"character_selection_tip.text": "Elige el personaje que quieres jugar.\nLos personajes se diferencian por sus puntos de vida,\nsus puntos de mana y sus ataques."
+		},
+		"open_backup.text": "Abrir un archivo de respaldo",
+		"launch_this_backup.text": "Lanzar esta copia de respaldo",
+		"backup_tip.text": "El archivo debe estar en formato JSON.",
+		"options.text": "Opciones",
+		"options": {
+			"keybind.text": "Controles",
+			"keybind:forward.text": "Avanzar",
+			"keybind:backward.text": "Retroceder",
+			"keybind:left.text": "Girar a la izquierda",
+			"keybind:right.text": "Girar a la derecha",
+			"keybind:console.text": "Mostrar/esconder la consola",
+			"audio.text": "Audio",
+			"audio:music.text": "Volumen de la música",
+			"audio:sound.text": "Volumen de los sonidos",
+			"lang.text": "Idioma",
+			"lang:en_US.text": "Inglés",
+			"lang:es_ES.text": "Español",
+			"lang:fr_FR.text": "Francés",
+			"about.text": "A proposito",
+			"about:tutorial.text": "¿Cómo jugar?",
+			"about:updates.text": "Notas de las actualizaciones",
+			"about:credits.text": "Creditos"
+		},
+		"pause.text": "Pausa",
+		"resume.text": "Retomar",
+		"exit.text": "Dejar",
+		"main_menu.text": "Menú principal",
+		"death_title.text": "¡Estás muerto!",
+		"death_subtitle.text": "Es muy triste...",
+		"credits.text": "Creditos",
+		"credits": {
+			"copyright.text": "Copyright © 2021. Do not distribute!",
+			"copyright_fool.text": "Copyright © 2021. Donut distribute!",
+			"clarisse_job.text": "Director artístico y Guionista",
+			"lean_job.text": "Game Designer",
+			"matteo_job.text": "UI & Level Designer"
+		},
+		"health.text": "Salud",
+		"mana.text": "Mana",
+		"ability1_title.text": "Primera habilidad",
+		"ability2_title.text": "Segunda habilidad",
+		"ult_title.text": "Último",
+		"character": {
+			"mage": {
+				"name.text": "Mago",
+				"fireball.text": "Bola de fuego",
+				"fireball_desc.text": "Lanza una bola de fuego a tu oponente.\nDaño: 4\nCosto: 3",
+				"wand.text": "Varita mágica",
+				"wand_desc.text": "Utilizas una varita mágica para lastimar a tu oponente.\nDaño: 3\nCosto: 2",
+				"lightning.text": "Rayo",
+				"lightning_desc.text": "Un rayo golpea a todos los enemigos en el nivel.\nDaño: 5 para todos los enemigos en el nivel\nCosto: 9"
+			},
+			"rogue": {
+				"name.text": "Pícaro",
+				"double_daggers.text": "Dagas dobles",
+				"double_daggers_desc.text": "Utilizas dos pequeñas dagas para lastimar a tu oponente.\nDaño: 4 (8 después de usar Ataque sigiloso)\nCosto: 2",
+				"stealth.text": "Ataque sigiloso",
+				"stealth_desc.text": "Doblas tus daños para la próxima ronda.\nCosto: 4",
+				"discretion.text": "Discreción",
+				"discretion_desc.text": "Triplicas la tasa de escape de tu oponente.\nCosto: 7"
+			},
+			"paladin": {
+				"name.text": "Paladín",
+				"sword_strike.text": "Golpe de espada",
+				"sword_strike_desc.text": "Utilizas una espada para lastimar a tu oponente.\nDaño: 4\nCosto: 2",
+				"parade.text": "Desfile",
+				"parade_desc.text": "Bloqueas el próximo ataque de tu oponente.\nCosto: 4",
+				"regeneration.text": "Regeneración",
+				"regeneration_desc.text": "Regenera instantáneamente 5 puntos de vida.\nCosto: 7"
+			}
+		},
+		"enemy_ability": {
+			"kick.text": "Patada",
+			"hammer.text": "Martillazo",
+			"dagger.text": "Golpe de daga",
+			"arrow.text": "Tiro de flecha",
+			"heal.text": "Regeneración"
+		},
+		"player_block.text": "¡Tu bloqueas!",
+		"enemy_block.text": "¡Tu oponente bloquea!",
+		"subtitle": {
+			"lobby.text": "Parte 1:\nLa Taberna",
+			"dungeon.text": "Parte 2:\nEn el Calabozo",
+			"diamond.text": "Parte 3:\nEl Diamante Perdido"
+		},
+		"teller": {
+			"narrator.text": "Narrador",
+			"innkeeper.text": "Posadero",
+			"goblin.text": "Duende"
+		},
+		"dialog": {
+			"lobby": [
+				{"text": "Cuando te despiertas en una taberna, el posadero te habla."},
+				{"text": "Buenos dias %s, ¿qué tal? ¿Conoces la leyenda del diamante perdido?"},
+				{
+					"text": "¿Quieres que te lo diga?",
+					"options": ["Sí, por qué no", "Soy demasiado vago para escuchar"]
+				},
+				{"text": "Una leyenda dice que hay un diamante de gran valor escondido en una antigua mazmorra. ¡Si lo encuentras, será tuyo!"},
+				{"text": "Si quieres ir a buscarlo, puedes salir del albergue. Te guiare al calabozo. ¡Buena suerte!"},
+				{"text": "Como queráis :("}
+			],
+			"dungeon": [
+				{"text": "Finalmente has llegado a la mazmorra. Cuidado con los monstruos que están por ahí."},
+				{"text": "La puerta se cerró detrás de ti. No puedo volver."},
+				{"text": "Escuchas ruido proveniente de la habitación. Quizás contenga un tesoro..."},
+				{"text": "Intentas abrir la caja fuerte, pero está oxidada y no se rinde."},
+				{"text": "Sientes una presencia hostil en este pasillo. ¿Realmente vale la pena ir?"},
+				{"text": "Te golpeaste la cabeza. Es un muro, aquí."}
+			],
+			"diamond": [
+				{"text": "Continúas por el pasillo, adentrándote más en la mazmorra."},
+				{"text": "-bleh bleh bleh-"},
+				{"text": "Abres la caja fuerte y descubres que está vacía. Y polvoriento."},
+				{"text": "Este pasillo está muy oscuro. Se necesitaría una antorcha para ver más claramente."},
+				{"text": "Agarras el diamante y huyes con él tan rápido como puedas."}
+			],
+			"misc": {
+				"kill": [
+					{"text": "Mataste a un duende. *ruido de gorgoteo* Recupera algo de salud y maná."},
+					{"text": "Mataste a un guerrero esqueleto. *ruido de crujidos de huesos* Recupera algo de salud y maná."},
+					{"text": "Mataste a un arquero esqueleto. *ruido de crujidos de huesos* Recupera algo de salud y maná."}
+				],
+				"flight": [
+					{"text": "El duende se escapó. *ruido de pasos distantes* Recupera algo de salud y maná."},
+					{"text": "El guerrero esqueleto se escapó. *ruido de pasos y huesos* Recupera algo de salud y maná."},
+					{"text": "El arquero esqueleto se escapó. *ruido de pasos y huesos* Recupera algo de salud y maná."}
+				]
+			}
+		},
+		"fight.text": "¡Fight!",
+		"flee.text": "Huir",
+		"error": {
+			"json_error.text": "%e no es un archivo JSON válido."
+		}
+	}
+}
