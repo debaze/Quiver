@@ -1,0 +1,27 @@
+.map {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9999px;
+	height: 9999px;
+	margin: auto;
+	position: absolute;
+	overflow: hidden;
+	background-color: #000
+}
+
+.part {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.slot {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	background-image: url(textures/error.jpg);
+	background-size: cover !important;
+	image-rendering: crisp-edges;
+	transform-style: preserve-3d
+}

@@ -1,0 +1,11 @@
+.empty .slot {}
+
+.brick .slot {background-image: url(brick.png)}
+
+.brick2 .slot {background-image: url(brick2.png)}
+
+.wood .slot {background-image: url(wood.png)}
+
+.wood2 .slot {background-image: url(wood2.png)}
+
+.chest .slot {background-image: url(chest.png)}
