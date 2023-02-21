@@ -1,0 +1,14 @@
+/** Save menu **/
+
+.menu-save .scrollable {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+.menu-save .save_tip {
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-align: center
+}

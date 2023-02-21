@@ -1,0 +1,126 @@
+/** Play menu **/
+
+/* Buttons */
+
+.btn-new_game, .btn-open_backup {margin: 20px 0}
+
+.btn-open_backup {font-weight: normal}
+
+/* New game section */
+
+.new_game, .launch_backup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+.new_game {padding-bottom: 40px}
+
+.player_name_tip,
+.game_name_tip,
+.character_selection_tip,
+.backup_info {
+	font-size: 18px;
+	text-align: center;
+	white-space: pre
+}
+
+.new_game input[type="text"] {
+	width: 300px;
+	margin: 10px 0 40px 0;
+	padding: 8px;
+	outline: none;
+	border: 4px solid #000;
+	border-radius: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px
+}
+
+.new_game input[type="text"]::-webkit-placeholder {
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.5)
+}
+
+.new_game input[type="text"]::placeholder {
+	opacity: 1;
+	color: rgba(0, 0, 0, 0.5)
+}
+
+.character_selection {
+	width: 624px;
+	margin-top: 10px;
+	z-index: 1
+}
+
+.character_title {margin-top: 10px}
+
+.character_info {
+	display: none;
+	width: 608px;
+	margin-bottom: 40px;
+	padding: 8px;
+	top: -4px;
+	position: relative;
+	box-shadow: inset 0 0 0 4px #000;
+	background-color: #ab9d86;
+	font-size: 18px
+}
+
+.icon.health, .icon.shield, .icon.mana {display: inline-block}
+
+.health_value,
+.shield_value,
+.mana_value {
+	display: inline-block;
+	margin: 4px 0
+}
+
+.ability_title {
+	margin-top: 12px;
+	font-weight: bold;
+	text-decoration: underline
+}
+
+.ability_desc {
+	font-style: italic;
+	white-space: pre
+}
+
+/* Launch backup section */
+
+#open_backup {display: none}
+
+.container-backup {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+}
+
+.backup_tip {
+	width: 100%;
+	font-size: 18px
+}
+
+textarea {
+	width: 700px;
+	height: 184px;
+	margin-bottom: 20px;
+	padding: 8px;
+	outline: none;
+	border: 4px solid #000;
+	border-radius: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+	resize: none
+}
+
+.error {
+	color: #ba262b;
+	font-style: italic
+}
+
+.btn-launch_backup {margin-top: 20px}

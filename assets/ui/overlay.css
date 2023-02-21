@@ -1,0 +1,107 @@
+/** Overlays **/
+
+.overlay {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: transparent;
+	-webkit-animation: 0.2s linear;
+	animation: 0.2s linear
+}
+
+.overlay-menu {z-index: 3}
+
+.overlay-keybind {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 3
+}
+
+.overlay-pause {z-index: 2}
+
+.overlay-death {
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-animation: 2s linear;
+	animation: 2s linear;
+	z-index: 2
+}
+
+.overlay-load {
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	z-index: 1
+}
+
+.overlay-map {
+	/* Add some "#000" to make the visible area smaller */
+	background: radial-gradient(circle at 50%, transparent, #000, #000, #000);
+	z-index: 1
+}
+
+/* Overlay behind menus */
+
+@-webkit-keyframes overlay_menu_fade_in {
+	from {background-color: transparent}
+	to {background-color: rgba(0, 0, 0, 0.8)}
+}
+@keyframes overlay_menu_fade_in {
+	from {background-color: transparent}
+	to {background-color: rgba(0, 0, 0, 0.8)}
+}
+
+@-webkit-keyframes overlay_menu_fade_out {
+	from {background-color: rgba(0, 0, 0, 0.8)}
+	to {background-color: transparent}
+}
+@keyframes overlay_menu_fade_out {
+	from {background-color: rgba(0, 0, 0, 0.8)}
+	to {background-color: transparent}
+}
+
+/* Loading overlay */
+
+@-webkit-keyframes overlay_load_fade_in {
+	from {background-color: transparent}
+	to {background-color: #000}
+}
+@keyframes overlay_load_fade_in {
+	from {background-color: transparent}
+	to {background-color: #000}
+}
+
+@-webkit-keyframes overlay_load_fade_out {
+	from {background-color: #000}
+	to {background-color: transparent}
+}
+@keyframes overlay_load_fade_out {
+	from {background-color: #000}
+	to {background-color: transparent}
+}
+
+/* Pause menu */
+
+@-webkit-keyframes overlay_pause_fade_in {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+@keyframes overlay_pause_fade_in {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@-webkit-keyframes overlay_pause_fade_out {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+@keyframes overlay_pause_fade_out {
+	from {opacity: 1}
+	to {opacity: 0}
+}

@@ -1,0 +1,5 @@
+- Full refactoring
+- Remove PHP code to host the project on GitHub
+- Make branches for archived versions
+- Make beta branch for canvas/WebGL tests
+- Create encountered issues in the GitHub Issues page
