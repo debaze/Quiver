@@ -1,0 +1,9 @@
+.spawn .slot, .exit .slot {background-image: url(green.png)}
+
+.comment .slot {background-image: url(orange.png)}
+
+.floor .slot {background-image: url(dark.png)}
+
+.trap .slot {background-image: url(red.png)}
+
+.chest .slot {background-image: url(purple.png)}
