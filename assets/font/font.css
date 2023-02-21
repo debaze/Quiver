@@ -1,0 +1,22 @@
+@font-face {
+	font-family: Quiver;
+	src: url(quiver.ttf) format("truetype")
+}
+
+.title,
+.nojs,
+.windowtoosmall,
+.display,
+.version,
+wrapper,
+.overlay-options,
+section,
+button,
+input,
+.subtitle,
+.hud {
+	font-family: Quiver
+}
+
+/* mono font (for backup contents) */
+.backup_content {font-family: "Courier New", monospace}
