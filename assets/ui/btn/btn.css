@@ -1,0 +1,40 @@
+.btn {
+	width: 448px; /* original width = 112px */
+	height: 52px; /* original height = 13px */
+	padding: 0;
+	outline: none;
+	border: none;
+	background-image: url(btn-normal.png);
+	background-color: transparent;
+	background-size: cover !important;
+	color: #000;
+	cursor: pointer;
+	image-rendering: crisp-edges;
+	font-size: 24px
+}
+
+.btn:active {background-image: url(btn-normal_press.png)}
+
+.btn-disabled {
+	background-image: url(btn-disabled.png);
+	color: #fff;
+	cursor: not-allowed
+}
+
+.btn-disabled:active {background-image: url(btn-disabled.png)}
+
+.btn-close {
+	width: 52px;
+	background-image: url(btn-close.png)
+}
+
+.btn-close:active {background-image: url(btn-close_press.png)}
+
+.btn-key {
+	width: 52px;
+	background-image: url(btn-key.png)
+}
+
+.btn-key:active {background-image: url(btn-key_press.png)}
+
+.btn-class {margin-bottom: 24px}
