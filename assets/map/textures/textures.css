@@ -1,0 +1,21 @@
+.empty .slot {}
+
+.brick .slot {background-image: url(brick.png)}
+
+.mossybrick .slot {background-image: url(mossybrick.png)}
+
+.darkbrick .slot {background-image: url(darkbrick.png)}
+
+.darkbrick_side .slot {background-image: url(darkbrick_side.png)}
+
+.wood .slot {background-image: url(wood.png)}
+
+.wood_slab .slot {background-image: url(wood_slab.png)}
+
+.table_side .slot {background-image: url(table_side.png)}
+
+.chest .slot {background-image: url(chest.png)}
+
+.chest_side .slot {background-image: url(chest_side.png)}
+
+.carpet .slot {background-image: url(carpet.png)}
