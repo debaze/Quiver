@@ -1,0 +1,33 @@
+@font-face {
+	/* title font */
+	font-family: pixelbit;
+	src: url(pixelbit.ttf)
+}
+
+@font-face {
+	/* global font */
+	font-family: retrocomputer;
+	src: url(retrocomputer.ttf)
+}
+
+
+
+.menu-main .title,
+#credits_title,
+.menu-pause {
+	font-family: pixelbit
+}
+
+.nojs,
+.windowtoosmall,
+wrapper,
+.display,
+.version,
+section,
+button,
+input {
+	font-family: retrocomputer
+}
+
+/* mono font (for backup contents) */
+#backup_content {font-family: Courier New, monospace}

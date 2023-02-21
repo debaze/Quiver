@@ -1,0 +1,27 @@
+/* ui animations */
+
+
+
+/* first background */
+@keyframes travelling1 {
+	from {right: 0}
+	to {right: 100%}
+}
+
+/* second background */
+@keyframes travelling2 {
+	from {right: -100%}
+	to {right: 0}
+}
+
+/* credits fading out (opening) */
+@keyframes fadeOut {
+	0%, 20% {opacity: 1}
+	100% {opacity: 0}
+}
+
+/* credits scrolling */
+@keyframes credits {
+	0%, 2% {top: 0}
+	100% {top: -1731px} /* credits height */
+}
