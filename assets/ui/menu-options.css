@@ -1,0 +1,70 @@
+.option-name {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 18px
+}
+
+.option-name:hover {background-color: #c4b399}
+
+.blank {
+	width: 100%;
+	height: 32px
+}
+
+/* volume range inputs */
+
+.volume {
+	display: inline-block;
+	-webkit-appearance: none;
+	height: 2px;
+	margin: 15px 5px 0 15px;
+	float: right;
+	background-color: #000;
+	cursor: pointer
+}
+
+.volume::-webkit-slider-runnable-track,
+.volume::-moz-range-track,
+.volume::-ms-track {
+	height: 100%;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	color: transparent
+}
+
+.volume::-webkit-slider-thumb,
+.volume::-moz-range-thumb {
+	-webkit-appearance: none;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #000;
+	border-radius: 0;
+	background-color: #776952
+}
+
+.volume::-moz-range-progress,
+.volume::-ms-fill-lower,
+.volume::-ms-fill-upper {
+	height: 0;
+	background-color: transparent
+}
+
+.volume::-ms-tooltip {display: none}
+
+/* volume number inputs */
+
+.volume_nb {
+	display: inline-block;
+	-webkit-appearance: none;
+	width: 40px;
+	height: 30px;
+	float: right;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	font-size: 18px
+}

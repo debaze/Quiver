@@ -1,0 +1,66 @@
+/* map container */
+
+.map-container {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	overflow: hidden;
+	background-color: #262626;
+	transition-duration: 0.2s
+}
+
+/* map and uppermap */
+
+#map, #uppermap, #entities {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9999px;
+	height: 9999px;
+	margin: auto;
+	position: absolute;
+	overflow: hidden
+}
+
+#map, #entities {z-index: -1}
+
+/* parts */
+
+.part, .upperpart, .entity {
+	position: absolute;
+	background-repeat: repeat;
+	image-rendering: crisp-edges
+}
+
+.entity {background-size: cover}
+
+/* player */
+
+#player {
+	width: 64px;
+	height: 64px;
+	background-size: cover;
+	image-rendering: crisp-edges
+}
+
+/* graphic effects */
+
+.blur {
+	-webkit-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px)
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
