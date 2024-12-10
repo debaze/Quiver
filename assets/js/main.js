@@ -2,7 +2,7 @@ const Game = {
 	init: function() {
 		$("meta[name='version']").setAttribute("version", this.version); // Set the current version as metadata
 		this.resize(); // Print display infos on load
-		footer.version.textContent = `Quiver ${this.version} - Copyright (C) 2021`; // Print the current version on the footer
+		footer.version.textContent = `Quiver ${this.version} - Copyright (C) 2021-2024`; // Print the current version on the footer
 		$("title").textContent = `Quiver ${this.version}`; // Print the window title on the last version
 		Game.lang("en_US"); // Default language is english (this setting can be modified in options)
 		// Reset inputs

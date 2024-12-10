@@ -52,8 +52,8 @@
 		"death_subtitle.text": "It's really sad...",
 		"credits.text": "Credits",
 		"credits": {
-			"copyright.text": "Copyright © 2021. Do not distribute!",
-			"copyright_fool.text": "Copyright © 2021. Donut distribute!",
+			"copyright.text": "Copyright © 2021-2024. Do not distribute!",
+			"copyright_fool.text": "Copyright © 2021-2024. Donut distribute!",
 			"clarisse_job.text": "Artistic Director & Screenwriter",
 			"lean_job.text": "Game Designer",
 			"matteo_job.text": "UI & Level Designer"
