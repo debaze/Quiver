@@ -1,6 +1,4 @@
-How To Play?
-
-
+# How To Play?
 
 Wanna start your first Quiver game? Here are the basic infos that you need to know before playing.
 

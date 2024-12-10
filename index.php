@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 
 <html prefix="og: http://ogp.me/ns#" lang="en">
-
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -150,11 +149,11 @@
 					req1 = new XMLHttpRequest(),
 					req2 = new XMLHttpRequest();
 					// Request play guide
-					req1.open("GET", "howtoplay.txt");
+					req1.open("GET", "howtoplay.md");
 					req1.send();
 					req1.addEventListener("load", function() {howtoplay = this.response});
 					// Request updates history
-					req2.open("GET", "updates_history.txt");
+					req2.open("GET", "updates_history.md");
 					req2.send();
 					req2.addEventListener("load", function() {updates_history = this.response})
 					$(".option-name.tutorial").addEventListener("click", function() {alert(howtoplay)});
@@ -2360,5 +2359,4 @@
 			window.addEventListener("resize", Game.resize)
 		</script>
 	</body>
-
 </html>
