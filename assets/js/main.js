@@ -7,7 +7,11 @@ const Game = {
 		Game.lang("en_US"); // Default language is english (this setting can be modified in options)
 		// Reset inputs
 		document.addEventListener("keydown", function(e) {
-			if (e.keyCode === Key.console) ($("#console").style.display !== "block") ? show($("#console")) : hide($("#console"))
+			if (e.keyCode === Key.console) {
+				e.preventDefault();
+
+				($("#console").style.display !== "block") ? show($("#console")) : hide($("#console"));
+			}
 		});
 		let empty = "";
 		play.new_game.player_name.value = empty;
