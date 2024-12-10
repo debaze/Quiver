@@ -723,7 +723,7 @@ const Game = {
 		// Print display infos on the footer
 		footer.display.textContent = `Display: ${window.innerWidth} * ${window.innerHeight}`
 	},
-	version: "1.1.4"
+	version: "1.1.5"
 }
 
 let UI = {

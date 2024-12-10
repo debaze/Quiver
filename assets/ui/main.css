@@ -3,7 +3,7 @@
 /* Font import */
 @font-face {
 	font-family: Quiver;
-	src: url(../font/Quiver.ttf) format("truetype")
+	src: url(../font/quiver.ttf) format("truetype")
 }
 
 /* Text selection color */
@@ -17,11 +17,6 @@ body {
 	user-select: none;
 	cursor: default;
 	font-family: Quiver, sans-serif
-}
-
-/* Mask 000webhost banner */
-div a[href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
-	display: none !important
 }
 
 main {display: none}

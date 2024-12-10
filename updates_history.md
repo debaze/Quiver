@@ -54,3 +54,11 @@ Added a footer which indicates the game current version and the window size, plu
 
 1.1.4 - 12/09/21
 When creating a new game, health, shield and mana icons are visible. Starting the game as a mage will no longer make the character invisible.
+
+1.1.5 - 12/10/24
+PHP has been removed to host the game on GitHub, and howtoplay/updates_history have been updated as Markdown files.
+This version also introduced some long-awaited fixes:
+- Fix pixelated look
+- Fix some spelling mistakes
+- Prevent default console key (F1) behavior
+If I had published the update yesterday, it would have been exactly 3 years since 1.1.4. Unfortunately I missed that chance.
