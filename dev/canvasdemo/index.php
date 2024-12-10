@@ -18,7 +18,7 @@
 
 			canvas {
 				background-color: #222;
-				image-rendering: crisp-edges
+				image-rendering: pixelated
 			}
 		</style>
 		<title>Quiver Beta</title>

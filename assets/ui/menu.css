@@ -20,7 +20,7 @@ Dark: #c4b399
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 	-webkit-animation: scrollbox-open 0.2s linear;
 	animation: scrollbox-open 0.2s linear
 }
@@ -29,7 +29,7 @@ Dark: #c4b399
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 	-webkit-transform: rotateZ(180deg);
 	-ms-transform: rotateZ(180deg);
 	transform: rotateZ(180deg);

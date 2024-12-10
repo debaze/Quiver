@@ -37,7 +37,7 @@
 .part, .upperpart, .entity {
 	position: absolute;
 	background-repeat: repeat;
-	image-rendering: crisp-edges
+	image-rendering: pixelated
 }
 
 .entity {background-size: cover}
@@ -48,7 +48,7 @@
 	width: 64px;
 	height: 64px;
 	background-size: cover;
-	image-rendering: crisp-edges
+	image-rendering: pixelated
 }
 
 /* Graphic effects */

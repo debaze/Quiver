@@ -14,7 +14,7 @@
 	width: 260px;
 	height: 896px;
 	background-size: cover;
-	image-rendering: crisp-edges
+	image-rendering: pixelated
 }
 
 .menu-load .loading {
@@ -27,5 +27,5 @@
 	left: 0;
 	position: absolute;
 	background-size: cover;
-	image-rendering: crisp-edges
+	image-rendering: pixelated
 }

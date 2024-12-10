@@ -114,7 +114,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
-	image-rendering: crisp-edges
+	image-rendering: pixelated
 }
 
 .menu-fight .enemy_avatar .avatar {

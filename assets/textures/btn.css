@@ -7,7 +7,7 @@
 	line-height: 52px;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 	cursor: pointer;
 	text-align: center;
 	font-size: 24px
