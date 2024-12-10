@@ -1,0 +1,176 @@
+<!--
+	Quiver, a rogue-like web video game!
+	Made by Clarisse Eynard, Léan Houdayer and Mattéo Legagneux.
+	Copyright (C) 2021. All rights reserved.
+-->
+
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Clarisse Eynard, Léan Houdayer, Mattéo Legagneux">
+		<meta name="description" content="A rogue-like web video game!">
+		<meta name="version" content="1.1.4">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://debaze.github.io/Quiver">
+		<meta property="og:site_name" content="GitHub">
+		<meta property="og:title" content="Quiver">
+		<meta property="og:description" content="A rogue-like web video game!">
+		<meta property="og:image" content="https://debaze.github.io/Quiver/assets/textures/menu/background.jpg">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="assets/ui/dialog.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/footer.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/hud.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-credits.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-death.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-fight.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-keybind.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-load.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-main.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-options.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-pause.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-play.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/menu-save.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/noscript.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/overlay.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/subtitle.css">
+		<link rel="stylesheet" type="text/css" href="assets/textures/btn.css">
+		<link rel="stylesheet" type="text/css" href="assets/textures/icon.css">
+		<link rel="stylesheet" type="text/css" href="assets/textures/map.css">
+		<link rel="stylesheet" type="text/css" href="assets/textures/texture_list.css">
+		<link rel="stylesheet" type="text/css" href="assets/ui/main.css">
+		<title lang="en" translate="no">Quiver</title>
+	</head>
+
+	<body>
+		<noscript>
+			<p>
+				Quiver needs JavaScript to work.<br>
+				Enable JavaScript in your browser, then try again.<br><br>
+
+				<a href="">
+					Reload
+				</a>
+			</p>
+
+			<div class="version">
+				1.1.4
+			</div>
+		</noscript>
+
+		<main>
+			<div id="console">
+				<div class="console-title">
+					Console
+				</div>
+
+				<div class="x"></div>
+
+				<div class="y"></div>
+			</div>
+
+			<include src="assets/ui/menu-main.html"></include>
+
+			<div class="overlay overlay-menu">
+				<include src="assets/ui/menu-play.html"></include>
+				<include src="assets/ui/menu-options.html"></include>
+				<include src="assets/ui/menu-save.html"></include>
+			</div>
+
+			<include src="assets/ui/menu-keybind.html"></include>
+
+			<div class="overlay overlay-load"></div>
+
+			<include src="assets/ui/menu-load.html"></include>
+
+			<div class="overlay overlay-pause">
+				<include src="assets/ui/menu-pause.html"></include>
+			</div>
+
+			<div class="overlay overlay-death">
+				<include src="assets/ui/menu-death.html"></include>
+			</div>
+
+			<div class="map-container">
+				<div class="overlay overlay-map"></div>
+
+				<div id="player"></div>
+
+				<div id="map"></div>
+
+				<div id="uppermap"></div>
+
+				<div id="entities"></div>
+
+				<div class="hud">
+					<div class="nickname"></div>
+
+					<div class="health_info"></div>
+
+					<progress class="health_value"></progress>
+
+					<div class="mana_info"></div>
+
+					<progress class="mana_value"></progress>
+				</div>
+
+				<div class="level-subtitle"></div>
+
+				<div class="dialog">
+					<div class="dialog-content"></div>
+
+					<button class="dialog-option dialog-option-1"></button>
+
+					<button class="dialog-option dialog-option-2"></button>
+				</div>
+
+				<include src="assets/ui/menu-fight.html"></include>
+			</div>
+
+			<include src="assets/ui/menu-credits.html"></include>
+			<include src="assets/ui/footer.html"></include>
+		</main>
+
+		<script>
+			{
+				// Include every HTML file
+				const promises = [];
+				const includes = document.getElementsByTagName("include");
+				const domParser = new DOMParser();
+				const currentScript = document.currentScript;
+
+				function handlePromiseResponse(response, include) {
+					response.text()
+						.then(text => domParser.parseFromString(text, "text/html"))
+						.then(html => {
+							include.replaceWith(...html.body.children);
+						});
+				}
+
+				for (let i = 0; i < includes.length; i++) {
+					const include = includes[i];
+					const promise = fetch(include.getAttribute("src"))
+						.then(response => handlePromiseResponse(response, include));
+
+					promises.push(promise);
+				}
+
+				Promise.all(promises).then(() => {
+					// Load main script
+					fetch("assets/js/main.js")
+						.then(response => response.text())
+						.then(js => {
+							const script = document.createElement("script");
+
+							script.textContent = js;
+
+							currentScript.after(script);
+						});
+				});
+			}
+		</script>
+	</body>
+</html>
